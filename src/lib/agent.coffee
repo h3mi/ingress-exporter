@@ -30,8 +30,6 @@ Agent = GLOBAL.Agent =
 
         agentTeam = Agent.strToTeam portal.team
 
-	return callback() if typeof portal.resonators is 'undefined'
-
         async.each portal.resonators, (resonator, callback) ->
 
             if resonator isnt null
