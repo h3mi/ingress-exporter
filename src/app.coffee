@@ -43,6 +43,10 @@ if argv.detect?
     argv.detectmunge = argv.detect
     argv.detectplayer = argv.detect
 
+if not argv.dashboard?
+    console.log 'Please specify --dashboard argument'
+    return
+
 bootstrap = ->
 
     async.series [

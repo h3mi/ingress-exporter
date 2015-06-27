@@ -163,7 +163,7 @@ tryMungeSet = (tryCallback) ->
 
 extractMunge = (callback) ->
 
-    request.get '/jsc/gen_dashboard.js', (error, response, body) ->
+    request.get '/jsc/gen_dashboard_'+argv.dashboard+'.js', (error, response, body) ->
         
         if error
             callback 'fail'
